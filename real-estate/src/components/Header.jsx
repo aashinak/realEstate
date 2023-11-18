@@ -2,10 +2,11 @@ import {FaSearch} from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 export default function Header() {
   return (
-    <header className='bg-primary shadow-md'>
-        <div className='flex justify-between items-center max-w-6xl mx-auto p-3' > 
+    // h-[10vh] flex'
+    <header className='bg-primary shadow-md h-[10vh] flex '  >
+        <div className='flex justify-between items-center  w-[100%] sm:w-[85%]  mx-auto p-3 my-auto' > 
             <Link to='/'>
-            <h1 className='font-bold text-base sm:text-xl flex flex-wrap'>
+            <h1 className='w-24 sm:w-60 font-bold text-base sm:text-xl flex flex-wrap justify-center'>
                 <span className='text-greenie'>Aashin</span>
                 <span className='text-lightblue'>Estate</span>
             </h1>
@@ -14,7 +15,7 @@ export default function Header() {
                 <input className='w-24 sm:w-60 bg-transparent placeholder-greenie focus:outline-none ' type="text" placeholder='Search...' />
                 <FaSearch className='text-greenie'/>
             </form>
-            <ul className='flex gap-7'>
+            <ul className='w-24 sm:w-60 flex justify-center gap-7'>
               <Link to='/'>
                 <li className='hidden sm:inline text-greenie text-base hover:text-lightblue'>Home</li>
               </Link>
@@ -22,7 +23,7 @@ export default function Header() {
                 <li className='hidden sm:inline text-greenie text-base hover:text-lightblue'>About</li>
               </Link>
               <Link to='/sign-in'>
-                <li className='text-greenie text-sm sm:text-base hover:text-lightblue'>Sign in</li>
+                <li className='text-greenie  text-sm sm:text-base hover:text-lightblue'>SignIn</li>
               </Link>
             </ul>
         </div>
