@@ -23,7 +23,7 @@ export default function Header() {
                 <li className='hidden sm:inline text-greenie text-base hover:text-lightblue'>About</li>
               </Link>
               <Link to='/sign-in'>
-                <li className='text-greenie  text-sm sm:text-base hover:text-lightblue'>SignIn</li>
+                <li className='text-greenie  text-sm sm:text-base hover:text-lightblue'>Sign in</li>
               </Link>
             </ul>
         </div>
